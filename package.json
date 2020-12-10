@@ -1,0 +1,20 @@
+{
+  "name": "apprestapi",
+  "version": "1.0.0",
+  "description": "Aplikasi REST API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/yohanesdl9/apprestapi.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "Yohanes Dwi Listio",
+  "license": "ISC"
+}
