@@ -73,3 +73,14 @@ exports.hapusmahasiswa = function (req, res){
     }
   });
 };
+
+// Menampilkan group matakuliah yang diambil mahasiswa
+exports.tampilgroupmk = function (req, res) {
+  connection.query("SELECT mhs.id_mahasiswa, mhs.nim, mhs.nama, mhs.jurusan, mk.matakuliah, mk.sks FROM mahasiswa AS mhs INNER JOIN krs ON krs.id_mahasiswa = mhs.id_mahasiswa INNER JOIN matakuliah AS mk ON krs.id_matakuliah = mk.id_matakuliah", function(error, rows, fields) {
+    if (error) {
+      console.log(error);
+    } else {
+      response.oknested(rows, res);
+    }
+  });
+};
