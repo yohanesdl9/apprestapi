@@ -96,3 +96,7 @@ exports.login = function(req, res) {
     }
   });
 }
+
+exports.halamanrahasia = function(req, res) {
+  response.ok("Ini adalah halaman rahasia yang hanya bisa diakses user dengan role = 2", res);
+}
